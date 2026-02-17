@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Santo Memorial – A Depository of Saints</title>
+  <meta name="description" content="Santo Memorial is a reverent collection of saints, their stories, and their enduring legacy through the ages."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-cross">✦</span>
+        <div>
+          <h1 class="site-title">Santo Memorial</h1>
+          <p class="site-tagline">A Depository of Saints</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="saints.html">All Saints</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Support Us</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="saints.html">All Saints</a>
+      <a href="about.html">About</a>
+      <a href="donate.html">Support Us</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. in Faith</p>
+      <h2 class="hero-title">Lives Lived in<br/><em>Holiness & Grace</em></h2>
+      <p class="hero-subtitle">A reverent collection of saints from across the ages — their stories, their miracles, and the reasons their memory endures.</p>
+      <a href="saints.html" class="btn-primary">Explore the Saints</a>
+    </div>
+    <div class="hero-ornament">✦</div>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search by name, feast day, or patronage…" oninput="searchSaints()" />
+        <span class="search-icon">⊕</span>
+      </div>
+      <div id="searchResults" class="search-results hidden"></div>
+    </div>
+  </section>
+
+  <!-- FEATURED SAINTS -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-rule"></span>
+        <h2 class="section-title">Featured Saints</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="saints-grid" id="featuredGrid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="center-btn">
+        <a href="saints.html" class="btn-secondary">View All Saints →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEAST DAY FILTER -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-rule"></span>
+        <h2 class="section-title">Browse by Month</h2>
+        <span class="section-rule"></span>
+      </div>
+      <div class="month-grid">
+        <button onclick="filterByMonth('January')">January</button>
+        <button onclick="filterByMonth('February')">February</button>
+        <button onclick="filterByMonth('March')">March</button>
+        <button onclick="filterByMonth('April')">April</button>
+        <button onclick="filterByMonth('May')">May</button>
+        <button onclick="filterByMonth('June')">June</button>
+        <button onclick="filterByMonth('July')">July</button>
+        <button onclick="filterByMonth('August')">August</button>
+        <button onclick="filterByMonth('September')">September</button>
+        <button onclick="filterByMonth('October')">October</button>
+        <button onclick="filterByMonth('November')">November</button>
+        <button onclick="filterByMonth('December')">December</button>
+      </div>
+      <div class="saints-grid" id="monthGrid"></div>
+    </div>
+  </section>
+
+  <!-- DONATE BANNER -->
+  <section class="donate-banner">
+    <div class="container">
+      <p class="donate-icon">☩</p>
+      <h3>Support Santo Memorial</h3>
+      <p>This project is kept alive by the generosity of the faithful. Your donation helps us grow, add new saints, and keep this resource freely available to all.</p>
+      <a href="donate.html" class="btn-primary">Make a Donation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">✦ Santo Memorial</div>
+      <p class="footer-text">A labor of faith and devotion. All content is offered freely in honor of the saints.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="saints.html">Saints</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Santo Memorial. Made with devotion.</p>
+    </div>
+  </footer>
+
+  <script src="saints-data.js"></script>
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
