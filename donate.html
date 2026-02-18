@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apoiar – Santo Memorial</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-cross">✦</span>
+        <div>
+          <h1 class="site-title">Santo Memorial</h1>
+          <p class="site-tagline">Repositório de Santos</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="saints.html">Todos os Santos</a>
+        <a href="about.html">Sobre</a>
+        <a href="donate.html" class="active">Apoiar</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="saints.html">Todos os Santos</a>
+      <a href="about.html">Sobre</a>
+      <a href="donate.html">Apoiar</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h2 class="page-hero-title">Apoie o Santo Memorial</h2>
+    <p class="page-hero-sub">A sua generosidade mantém esta missão viva</p>
+  </section>
+
+  <section class="donate-section">
+    <div class="container donate-container">
+
+      <div class="about-ornament">☩</div>
+
+      <div class="donate-intro">
+        <p>O Santo Memorial é um projeto gratuito e sem fins comerciais, mantido por amor aos santos e às comunidades que os veneram. Não existem paywalls, nem subscrições — todo o conteúdo está livremente disponível para todos.</p>
+        <p>Se considera este recurso significativo e deseja apoiar o seu crescimento, a sua doação — por mais pequena que seja — faz uma diferença real. Ajuda-nos a adicionar mais santos, melhorar o site e manter tudo a funcionar.</p>
+      </div>
+
+      <div class="donate-box">
+        <h3>Fazer uma Doação</h3>
+        <p>Clique no botão abaixo para fazer uma doação segura via Buy Me a Coffee:</p>
+
+        <!-- ============================================================
+             INSTRUÇÕES PARA GOMONTMI:
+             1. Vá a https://www.buymeacoffee.com e crie uma conta GRATUITA
+             2. Escolha um nome de página (ex: "santomemorial")
+             3. Substitua YOUR_USERNAME abaixo pelo seu nome de utilizador real do Buy Me a Coffee
+             4. Está feito! O botão funcionará automaticamente.
+        =============================================================== -->
+
+        <div class="bmac-wrap">
+          <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank" class="bmac-btn">
+            ☕ Buy Me a Coffee
+          </a>
+        </div>
+
+        <p class="donate-note">Será direcionado para o Buy Me a Coffee, uma plataforma segura e de confiança. Pode doar qualquer quantia — até 1€ é profundamente apreciado.</p>
+      </div>
+
+      <div class="donate-box" style="margin-top: 2rem;">
+        <h3>Loja do Santo Memorial</h3>
+        <p>No futuro, ofereceremos produtos inspirados na fé aqui — gravuras, cartões e muito mais — com todos os lucros a apoiar o projeto.</p>
+
+        <!-- ============================================================
+             INSTRUÇÕES PARA GOMONTMI (para a loja futura):
+             1. Vá a https://gumroad.com e crie uma conta GRATUITA
+             2. Adicione produtos (gravuras, cartões, etc.)
+             3. Substitua o src do iframe abaixo pelo seu código de embed do Gumroad
+             4. O Gumroad cobra uma pequena % por venda — sem taxa mensal
+        =============================================================== -->
+
+        <div class="shop-placeholder">
+          <p>✦ Loja em breve. Volte em breve para produtos inspirados na fé.</p>
+        </div>
+      </div>
+
+      <div class="about-ctas" style="margin-top: 3rem;">
+        <a href="saints.html" class="btn-secondary">← Voltar aos Santos</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">✦ Santo Memorial</div>
+      <p class="footer-text">Um labor de fé e devoção. Todo o conteúdo é oferecido livremente em honra dos santos.</p>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="saints.html">Santos</a>
+        <a href="about.html">Sobre</a>
+        <a href="donate.html">Doar</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Santo Memorial. Feito com devoção.</p>
+    </div>
+  </footer>
+
+  <script src="saints-data.js"></script>
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

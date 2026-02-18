@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todos os Santos – Santo Memorial</title>
+  <meta name="description" content="Navegue pela coleção completa de santos no repositório Santo Memorial."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-cross">✦</span>
+        <div>
+          <h1 class="site-title">Santo Memorial</h1>
+          <p class="site-tagline">Repositório de Santos</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="saints.html" class="active">Todos os Santos</a>
+        <a href="about.html">Sobre</a>
+        <a href="donate.html">Apoiar</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="saints.html">Todos os Santos</a>
+      <a href="about.html">Sobre</a>
+      <a href="donate.html">Apoiar</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h2 class="page-hero-title">Todos os Santos</h2>
+    <p class="page-hero-sub">Navegue, pesquise e filtre a nossa coleção em crescimento</p>
+  </section>
+
+  <section class="saints-page-section">
+    <div class="container">
+
+      <!-- FILTROS -->
+      <div class="filters-bar">
+        <div class="search-wrap inline">
+          <input type="text" id="searchInput" placeholder="Pesquisar santos..." oninput="searchSaints()" />
+          <span class="search-icon">⊕</span>
+        </div>
+        <select id="monthFilter" onchange="filterSaintsPage()">
+          <option value="">Todos os Meses</option>
+          <option>janeiro</option><option>fevereiro</option><option>março</option>
+          <option>abril</option><option>maio</option><option>junho</option>
+          <option>julho</option><option>agosto</option><option>setembro</option>
+          <option>outubro</option><option>novembro</option><option>dezembro</option>
+        </select>
+        <select id="categoryFilter" onchange="filterSaintsPage()">
+          <option value="">Todas as Categorias</option>
+        </select>
+        <button onclick="resetFilters()" class="btn-reset">Limpar Filtros</button>
+      </div>
+
+      <p class="results-count" id="resultsCount"></p>
+
+      <!-- GRELHA DE SANTOS -->
+      <div class="saints-grid" id="allSaintsGrid"></div>
+
+      <div class="empty-state hidden" id="emptyState">
+        <p>✦ Nenhum santo encontrado com a sua pesquisa. Tente palavras diferentes.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">✦ Santo Memorial</div>
+      <p class="footer-text">Um labor de fé e devoção. Todo o conteúdo é oferecido livremente em honra dos santos.</p>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="saints.html">Santos</a>
+        <a href="about.html">Sobre</a>
+        <a href="donate.html">Doar</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Santo Memorial. Feito com devoção.</p>
+    </div>
+  </footer>
+
+  <script src="saints-data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    initSaintsPage();
+  </script>
+</body>
+</html>
