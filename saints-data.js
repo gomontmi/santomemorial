@@ -948,6 +948,456 @@ const saintsData = [
     ],
     destaque: false
   }
+,
+
+  {
+    id: "sao-longuinho",
+    nome: "São Longuinho (São Longino)",
+    festa: "15 de março",
+    mes: "março",
+    nascimento: "Desconhecido",
+    falecimento: "~37 d.C.",
+    origem: "Roma",
+    padroeiro: ["Objetos perdidos", "Cegos"],
+    categorias: ["Encontrar objetos perdidos", "Questões menores", "Visão"],
+    resumo: "Centurião romano que perfurou o lado de Cristo na cruz. Curado milagrosamente ao ser tocado pelo sangue de Jesus, converteu-se ao cristianismo. É invocado para encontrar objetos perdidos.",
+    historia: "Longino (nome derivado de 'longinus', lança em latim) era um centurião romano presente na crucificação de Jesus Cristo. Segundo o Evangelho de João, quando viram que Jesus já estava morto, em vez de lhe quebrarem as pernas como faziam aos outros crucificados, Longino atravessou-lhe o lado com uma lança, de onde saíram sangue e água. Segundo a tradição, Longino sofria de uma grave doença nos olhos que o estava a cegar. Quando perfurou o lado de Cristo, gotas de sangue e água respingaram nos seus olhos e ele foi instantaneamente curado. Mas a cura mais profunda aconteceu na sua alma: os olhos do espírito abriram-se e ele reconheceu em Jesus o Filho de Deus. Atribuem-lhe as palavras: 'Verdadeiramente este homem era o Filho de Deus.' Longino converteu-se ao cristianismo imediatamente. Deixou o exército romano e retirou-se para a Capadócia (actual Turquia) onde viveu como monge, pregando o Evangelho. Realizou muitos milagres de cura, especialmente de doenças dos olhos. Foi preso durante a perseguição aos cristãos e levado perante o governador, que ordenou que renunciasse à fé. Longino recusou firmemente. Foi torturado e finalmente decapitado por volta do ano 37 d.C. A devoção popular a São Longuinho cresceu especialmente no Brasil e em Portugal, onde é invocado para encontrar objectos perdidos. A tradição diz que ele era um homem de baixa estatura e, por isso, tinha boa visão do chão, conseguindo encontrar objectos caídos que outros não viam. Quando servia na corte romana, encontrava pertences perdidos e devolvia-os aos donos. Por isso tornou-se padroeiro de quem procura coisas perdidas. A tradição de dar 'três pulinhos' após encontrar o objecto tem várias explicações: homenagem ao santo que mancava, referência à Santíssima Trindade, ou simplesmente uma expressão de alegria e gratidão. A oração popular diz: 'São Longuinho, São Longuinho, se eu achar [objecto], dou três pulinhos!' Em Braga existe uma estátua equestre de São Longuinho, uma das poucas em Portugal.",
+    notavel: [
+      "Centurião que perfurou o lado de Cristo",
+      "Curado de cegueira pelo sangue de Jesus",
+      "Converteu-se imediatamente ao cristianismo",
+      "Invocado para encontrar objectos perdidos",
+      "Tradição popular dos 'três pulinhos'"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santa-faustina-kowalska",
+    nome: "Santa Faustina Kowalska",
+    festa: "5 de outubro",
+    mes: "outubro",
+    nascimento: "1905",
+    falecimento: "1938",
+    origem: "Polónia",
+    padroeiro: ["Divina Misericórdia"],
+    categorias: ["Misericórdia divina", "Perdão", "Compaixão"],
+    resumo: "Freira polaca a quem Jesus apareceu e revelou a mensagem da Divina Misericórdia. A imagem de Jesus Misericordioso e a Coroa da Divina Misericórdia são fruto das suas visões.",
+    historia: "Helena Kowalska nasceu a 25 de agosto de 1905 em Głogowiec, Polónia, numa família muito pobre de camponeses. Era a terceira de dez filhos. Desde criança sentia vocação religiosa mas os pais, necessitando do seu trabalho, não lhe permitiram entrar para o convento. Aos 16 anos teve uma visão de Jesus sofredor que lhe disse: 'Quanto tempo ainda te farei esperar?' Saiu de casa e, aos 20 anos, entrou para a Congregação das Irmãs de Nossa Senhora da Misericórdia, adoptando o nome de Irmã Maria Faustina. Trabalhou como cozinheira, jardineira e porteira. Exteriormente levava vida comum, mas interiormente vivia em profunda união mística com Deus. A 22 de fevereiro de 1931, Jesus apareceu-lhe vestido com túnica branca, com a mão direita erguida em sinal de bênção e a esquerda tocando no peito, de onde saíam dois raios: um vermelho (representando o sangue) e outro pálido (representando a água). Jesus disse-lhe: 'Pinta uma imagem segundo o modelo que vês, com a inscrição: Jesus, confio em Vós. Desejo que esta imagem seja venerada no mundo inteiro.' Pediu também que se instituísse a festa da Divina Misericórdia no primeiro domingo após a Páscoa e ensinou-lhe a Coroa da Divina Misericórdia. Faustina teve centenas de visões e locucões místicas, que registou num Diário de 600 páginas. Jesus revelou-lhe mensagens sobre a Sua infinita misericórdia para com os pecadores. Faustina sofreu intensamente de tuberculose, oferecendo o sofrimento pela conversão dos pecadores. Morreu a 5 de outubro de 1938, aos 33 anos. Foi canonizada por João Paulo II em 2000. A devoção à Divina Misericórdia espalhou-se pelo mundo inteiro. A imagem de Jesus Misericordioso é venerada em milhões de lares. A festa da Divina Misericórdia foi instituída oficialmente para toda a Igreja.",
+    notavel: [
+      "Vidente de Jesus Misericordioso",
+      "Autora do Diário sobre a Divina Misericórdia",
+      "A imagem de Jesus Misericordioso é baseada nas suas visões",
+      "Coroa da Divina Misericórdia revelada a ela",
+      "Canonizada por João Paulo II em 2000"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "padre-pio",
+    nome: "Padre Pio de Pietrelcina",
+    festa: "23 de setembro",
+    mes: "setembro",
+    nascimento: "1887",
+    falecimento: "1968",
+    origem: "Itália",
+    padroeiro: ["Doentes", "Defesa da vida"],
+    categorias: ["Curas milagrosas", "Confissão", "Sofrimento redentor"],
+    resumo: "Frade capuchinho italiano que recebeu os estigmas de Cristo. Conhecido pelas curas milagrosas, dom de bilocação e capacidade de ler almas. É um dos santos mais venerados do século XX.",
+    historia: "Francesco Forgione nasceu a 25 de maio de 1887 em Pietrelcina, sul de Itália, filho de camponeses. Desde os cinco anos manifestava êxtases místicos e falava com Jesus e Maria como se os visse. Aos 15 anos entrou para a Ordem dos Frades Menores Capuchinhos, recebendo o nome de Frei Pio. Foi ordenado sacerdote em 1910. Em 1918, enquanto rezava diante do crucifixo, recebeu os estigmas — as cinco chagas de Cristo nas mãos, pés e lado — que permaneceram visíveis e sangrando durante 50 anos até à sua morte. Foi o primeiro sacerdote estigmatizado da história da Igreja. Padre Pio manifestou extraordinários dons místicos: lia os corações e almas das pessoas no confessionário, profetizava acontecimentos futuros, tinha o dom da bilocação (ser visto em dois lugares ao mesmo tempo), exalava perfume de flores sem causa natural. Passava até 19 horas diárias no confessionário, ouvindo milhares de penitentes que vinham de todo o mundo. Incontáveis curas milagrosas foram-lhe atribuídas. Sofreu incompreensão e foi investigado pelo Santo Ofício, que o proibiu de celebrar missa em público durante dois anos. Suportou tudo com humildade. Em 1956, inaugurou a 'Casa Alívio do Sofrimento', um hospital moderno em San Giovanni Rotondo. Dizia que a sua obra mais importante não eram os milagres mas as almas que reconciliava com Deus. Celebrou a última missa a 22 de setembro de 1968 e morreu na madrugada de 23 de setembro, tendo os estigmas desaparecido do corpo. Cem mil pessoas assistiram ao funeral. Foi canonizado por João Paulo II em 2002. O seu corpo, incorrupto, está exposto em San Giovanni Rotondo, onde milhões de peregrinos o visitam anualmente.",
+    notavel: [
+      "Recebeu os estigmas de Cristo durante 50 anos",
+      "Dons de bilocação e leitura de almas",
+      "Incontáveis curas milagrosas documentadas",
+      "Fundou a Casa Alívio do Sofrimento (hospital)",
+      "Um dos santos mais venerados do século XX"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santa-mafalda-portugal",
+    nome: "Santa Mafalda de Portugal",
+    festa: "2 de maio",
+    mes: "maio",
+    nascimento: "~1195",
+    falecimento: "1256",
+    origem: "Portugal",
+    padroeiro: ["Arouca", "Mulheres"],
+    categorias: ["Proteção de mulheres", "Causas sociais", "Paz familiar"],
+    resumo: "Filha de D. Sancho I, rainha de Castela e depois freira cisterciense em Arouca. Dedicou-se aos pobres e doentes. É venerada informalmente, especialmente na região de Arouca.",
+    historia: "Mafalda nasceu por volta de 1195, filha do rei D. Sancho I de Portugal e da rainha D. Dulce de Aragão. Era irmã das santas Teresa e Sancha. Recebeu educação esmerada e desde jovem demonstrava grande piedade. Aos 13 anos foi prometida em casamento ao rei Henrique I de Castela, matrimónio arranjado por razões políticas. Casaram em 1215. Porém, um ano depois, o Papa Inocêncio III anulou o casamento por parentesco (eram primos). Mafalda regressou a Portugal, tendo recebido em dote várias terras, incluindo Arouca. Decidiu consagrar a vida a Deus e aos pobres. Fundou hospitais e asilos, dedicava-se pessoalmente a cuidar de doentes leprosos. Distribuía esmolas generosamente. Por volta de 1220 entrou como freira no Mosteiro de Arouca, de religiosas cistercienses. Ali viveu com grande austeridade e humildade, recusando privilégios devidos à condição régia. Dormia sobre tábuas, jejuava rigorosamente, passava horas em oração. Reformou o mosteiro, introduzindo disciplina mais rigorosa. Tinha especial caridade para com os pobres que batiam à porta do convento. Realizou vários milagres: multiplicou pães para dar aos necessitados, curou doentes. Morreu a 2 de maio de 1256, cercada de fama de santidade. Foi sepultada no mosteiro de Arouca. Embora nunca formalmente canonizada, é venerada como santa pelo povo há séculos. O seu túmulo em Arouca é local de peregrinação. A devoção é especialmente forte na região de Arouca e no norte de Portugal. É invocada por mulheres que enfrentam dificuldades, especialmente relacionadas com casamento, família e questões sociais.",
+    notavel: [
+      "Filha de D. Sancho I, irmã de duas outras santas",
+      "Rainha de Castela, casamento anulado pelo Papa",
+      "Fundou hospitais e cuidou pessoalmente de leprosos",
+      "Freira cisterciense em Arouca",
+      "Venerada informalmente como santa"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-gens-lisboa",
+    nome: "São Gens de Lisboa (São Ginés)",
+    festa: "25 de agosto",
+    mes: "agosto",
+    nascimento: "Século III",
+    falecimento: "~303",
+    origem: "Arles (França)",
+    padroeiro: ["Artistas", "Músicos", "Lisboa (antigo)"],
+    categorias: ["Proteção de artistas", "Inspiração", "Música"],
+    resumo: "Mártir cristão e antigo padroeiro de Lisboa antes de São Vicente. Protector de artistas e músicos, especialmente invocado por quem busca inspiração criativa.",
+    historia: "Genésio (Gens em português) nasceu no século III em Arles, na Gália (actual França). Era escrivão notário, responsável por registar actos oficiais. Durante a perseguição do imperador Diocleciano aos cristãos, Genésio foi convocado para registar os decretos imperiais contra os seguidores de Cristo. Enquanto escrevia as ordens de perseguição, sentiu profunda repulsa pelo que estava a fazer. Num acto de coragem extraordinária, atirou a pena, rasgou os documentos e declarou publicamente ser cristão. Foi imediatamente preso. Submetido a torturas terríveis, recusou renegar a fé. Foi decapitado por volta do ano 303. Outra tradição diz que Genésio era actor e, durante uma representação satírica do baptismo cristão perante o imperador, foi subitamente tocado pela graça divina, converteu-se realmente e proclamou Cristo, sendo martirizado. O culto a São Gens espalhou-se pela Europa. Em Portugal, foi trazido provavelmente por visigodos ou francos. Tornou-se padroeiro de Lisboa antes de São Vicente. Existia uma igreja dedicada a São Gens onde hoje está o Convento do Carmo. Com a trasladação das relíquias de São Vicente para Lisboa em 1173, este passou a ser o padroeiro principal, mas São Gens continuou venerado. Era especialmente invocado por escribas, notários, secretários e, mais tarde, por artistas e músicos. A ligação aos artistas deriva de uma das tradições que o identifica como actor convertido. É invocado para inspiração criativa, protecção do trabalho artístico e sucesso em empreendimentos culturais.",
+    notavel: [
+      "Mártir do século III",
+      "Antigo padroeiro de Lisboa",
+      "Protector de artistas e músicos",
+      "Escrivão ou actor convertido durante perseguição",
+      "Invocado para inspiração criativa"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santa-iria-tomar",
+    nome: "Santa Iria de Tomar (Santarém)",
+    festa: "20 de outubro",
+    mes: "outubro",
+    nascimento: "~650",
+    falecimento: "~653",
+    origem: "Portugal (Nabância/Tomar)",
+    padroeiro: ["Tomar", "Santarém"],
+    categorias: ["Castidade", "Proteção das mulheres", "Pureza"],
+    resumo: "Virgem e mártir portuguesa do século VII. Morta por ciúmes ao recusar propostas amorosas. O seu corpo foi lançado ao Nabão e apareceu milagrosamente no Tejo, dando nome a Santarém.",
+    historia: "Iria (ou Irene) nasceu por volta do ano 650 em Nabância, junto ao rio Nabão (actual Tomar). Era filha de Paterniano e Eufémia, família cristã visigótica. Desde criança consagrou-se a Deus, fazendo voto de virgindade perpétua. Era extraordinariamente bela e virtuosa. Um jovem nobre chamado Britaldo apaixonou-se por ela e pediu-a em casamento. Iria recusou respeitosamente, explicando que tinha consagrado a vida a Cristo. Britaldo, ferido no orgulho, não aceitou a recusa. Tentou várias vezes persuadi-la, chegando a pedir a intervenção dos pais, mas Iria manteve-se firme na sua decisão. Consumido pelo ciúme e pela rejeição, Britaldo decidiu vingar-se. Contratou um monge corrupto chamado Remígio que, em troca de ouro, inventou uma poção e convenceu as pessoas de que Iria estava grávida (a poção causava inchaço no ventre). O escândalo espalhou-se. O próprio pai, Paterniano, cego pela falsa evidência e pela desonra aparente, assassinou a filha num acesso de fúria, decapitando-a. Só depois descobriu a verdade e a inocência de Iria, caindo em profundo desespero e arrependimento. O corpo de Iria foi lançado ao rio Nabão. Milagrosamente, a corrente levou-o até ao rio Tejo e, quinze quilómetros abaixo, as águas depositaram o corpo numa praia, rodeado de luz celestial e perfume de flores. Anjos guardavam o corpo. O lugar passou a chamar-se 'Scallabis Iriana' e mais tarde Santarém (Santa Irene). Ali foi construída uma igreja em sua honra. São Julião, bispo de Cuenca, propagou o culto. Santa Iria tornou-se padroeira de Tomar e Santarém, sendo venerada como mártir da pureza e protectora das mulheres.",
+    notavel: [
+      "Virgem e mártir portuguesa do século VII",
+      "Morta pelo próprio pai enganado por falsa acusação",
+      "Corpo milagrosamente transportado pelo rio",
+      "Santarém recebeu o nome por causa dela",
+      "Padroeira da castidade e das mulheres"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santa-marinha-aguas-santas",
+    nome: "Santa Marinha de Águas Santas",
+    festa: "18 de julho",
+    mes: "julho",
+    nascimento: "Século VII",
+    falecimento: "Século VII",
+    origem: "Portugal (Águas Santas, Porto)",
+    padroeiro: ["Águas Santas"],
+    categorias: ["Causas impossíveis", "Saúde", "Protecção"],
+    resumo: "Virgem e mártir venerada em Águas Santas, perto do Porto. Lendas de milagres associados à fonte que brotou onde foi martirizada. É invocada em causas difíceis.",
+    historia: "Marinha viveu no século VII em Bitetos (actual Águas Santas), perto do Porto, durante o período da ocupação visigótica da Península Ibérica. Era filha de família cristã e desde jovem consagrou-se a Deus, fazendo voto de virgindade. Vivia em oração e dedicação aos pobres e doentes. Um nobre da região, talvez pagão ou ariano (heresia que negava a divindade de Cristo, comum entre visigodos), apaixonou-se por Marinha e pediu-a em casamento. Ela recusou firmemente, explicando que pertencia a Cristo. O nobre, enfurecido pela rejeição, acusou-a falsamente de crimes que não cometera. Foi presa e submetida a interrogatório. Recusou renegar a fé cristã ou quebrar o voto de castidade. Foi condenada à morte. Segundo a tradição, foi decapitada numa pedra. No local da execução brotou milagrosamente uma fonte de águas cristalinas com propriedades curativas. Doentes que bebiam da água ou se banhavam nela eram curados. A povoação passou a chamar-se Águas Santas. Foi construída uma igreja no local, dedicada a Santa Marinha. A romaria de Santa Marinha, a 18 de julho, atrai milhares de devotos que vêm beber da fonte santa e pedir a intercessão da mártir. Muitos ex-votos testemunham curas alcançadas. A 'Pedra de Santa Marinha' onde foi decapitada conserva-se na igreja, sendo objecto de veneração. Existe tradição de passar crianças doentes pela 'forna' (abertura na pedra) pedindo cura. Santa Marinha é invocada especialmente em causas impossíveis, doenças graves e situações desesperadas.",
+    notavel: [
+      "Virgem e mártir do século VII em Portugal",
+      "Fonte milagrosa brotou no local do martírio",
+      "Águas Santas recebeu o nome por causa dela",
+      "Romaria popular a 18 de julho",
+      "Invocada em causas impossíveis"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-frei-gil-vouzela",
+    nome: "São Frei Gil de Vouzela",
+    festa: "14 de maio",
+    mes: "maio",
+    nascimento: "~1140",
+    falecimento: "1265",
+    origem: "Portugal (Vouzela)",
+    padroeiro: ["Vouzela"],
+    categorias: ["Arrependimento", "Perdão", "Conversão"],
+    resumo: "Médico português que, após matar um homem em duelo, converteu-se, tornou-se eremita e depois frade dominicano. Exemplo de conversão e vida penitente.",
+    historia: "Gil Rodrigues nasceu por volta de 1140 em Vouzela. Era médico, profissão rara e prestigiada na época. Homem de temperamento violento, envolveu-se numa disputa que terminou em duelo. Gil matou o adversário. Atormentado pelo remorso, fugiu e refugiou-se numa gruta nas serras próximas de Vouzela, onde viveu como eremita durante anos, fazendo penitência severa pelo crime cometido. Alimentava-se de ervas e raízes, dormia sobre pedras, flagelava-se e passava noites inteiras em oração. Segundo a tradição, animais selvagens aproximavam-se dele mansamente, reconhecendo a sua santidade. A fama da sua penitência espalhou-se e pessoas começaram a procurá-lo pedindo conselhos e orações. Gil realizava curas, utilizando o seu conhecimento médico mas também, segundo testemunhos, por poder divino. Anos depois, Gil deixou a vida eremítica e ingressou na Ordem dos Pregadores (Dominicanos), provavelmente no convento de Coimbra. Como frade, dedicou-se à pregação e ao cuidado dos doentes e pobres. Continuou a vida austera de penitência. Tinha especial caridade para com pecadores arrependidos, encorajando-os à conversão. Morreu em 1265, com fama de santidade. Foi sepultado em Santarém. Embora nunca formalmente canonizado, é venerado como santo, especialmente na região de Vouzela. A gruta onde viveu como eremita tornou-se local de peregrinação. É invocado por quem busca conversão, por pecadores arrependidos e por quem precisa de força para mudar de vida.",
+    notavel: [
+      "Médico que matou em duelo e se converteu",
+      "Viveu como eremita em penitência severa",
+      "Tornou-se frade dominicano",
+      "Exemplo de arrependimento e conversão",
+      "Venerado especialmente em Vouzela"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-geraldo-braga",
+    nome: "São Geraldo de Braga",
+    festa: "5 de dezembro",
+    mes: "dezembro",
+    nascimento: "Desconhecido",
+    falecimento: "1108",
+    origem: "França",
+    padroeiro: ["Braga"],
+    categorias: ["Ajuda espiritual", "Cura", "Reforma da Igreja"],
+    resumo: "Monge beneditino francês que se tornou primeiro arcebispo de Braga após a reconquista cristã. Reformador da diocese e exemplo de santidade pastoral.",
+    historia: "Geraldo nasceu em França, provavelmente na região da Borgonha, em data desconhecida do século XI. Era monge beneditino do Mosteiro de Moissac, importante centro de renovação espiritual ligado à reforma cluniacense. Era conhecido pela santidade, sabedoria e capacidade de governo. O rei D. Afonso VI de Leão e Castela, em processo de reconquista cristã da Península Ibérica, precisava de bispos santos e capazes para restaurar as dioceses libertadas dos mouros. Braga, antiga sede primacial da Hispânia, estava devastada após séculos de domínio muçulmano. Em 1070, D. Afonso VI nomeou Geraldo como arcebispo de Braga, confiando-lhe a hercúlea tarefa de reconstruir a diocese. Geraldo aceitou por obediência. Chegou a Braga e encontrou a cidade em ruínas: a Sé estava destruída, não havia clero organizado, as estruturas eclesiásticas tinham desaparecido. Iniciou imediatamente a reconstrução. Mandou edificar nova Sé catedral, fundou mosteiros, organizou o cabido, formou sacerdotes, restaurou paróquias. Visitou pessoalmente todo o território da arquidiocese, pregando, catequizando, confirmando. Reintroduziu a liturgia romana. Defendeu a primazia de Braga sobre as dioceses da Galiza. Tinha grande caridade para com os pobres, distribuindo esmolas generosamente. Vivia com austeridade monástica, apesar da dignidade arquiepiscopal. Morreu em 1108, após 38 anos de episcopado. Foi sepultado na Sé de Braga. A sua obra foi fundamental para a restauração da cristandade no norte de Portugal. É venerado como santo, embora não formalmente canonizado. É invocado para ajuda espiritual, cura e protecção.",
+    notavel: [
+      "Primeiro arcebispo de Braga após reconquista",
+      "Reconstruiu a diocese em ruínas",
+      "Reformador e organizador da Igreja no norte de Portugal",
+      "38 anos de episcopado dedicado",
+      "Exemplo de santidade pastoral"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santo-adriao-sever",
+    nome: "Santo Adrião de Sever (São Adrião)",
+    festa: "1 de março",
+    mes: "março",
+    nascimento: "Século VII",
+    falecimento: "~875",
+    origem: "Norte de África",
+    padroeiro: ["Sever (Moncorvo)"],
+    categorias: ["Milagres", "Proteção contra o mal", "Curas"],
+    resumo: "Eremita venerado em Sever (Moncorvo) e em Trás-os-Montes. Tradição forte de romarias. Invocado para protecção e curas milagrosas.",
+    historia: "Adrião era, segundo a tradição, um príncipe ou nobre norte-africano que viveu no século VII. Converteu-se ao cristianismo e, rejeitando a vida mundana, decidiu dedicar-se inteiramente a Deus. Deixou a pátria e veio para a Península Ibérica procurando lugar de retiro para vida eremítica. Atravessou várias regiões até chegar às serras de Trás-os-Montes, em Portugal. Estabeleceu-se numa gruta nas proximidades de Sever (actual concelho de Moncorvo), onde viveu em profunda solidão, oração e penitência. Alimentava-se de raízes e frutos silvestres. Passava dias inteiros em contemplação. Realizou vários milagres: fez brotar água de uma rocha para saciar a sede de peregrinos, curou doentes que o procuravam, expulsou demónios. A fama da sua santidade espalhou-se e pessoas vinham de longe pedir bênção e conselho. Adrião acolhia a todos com caridade, mas preservava a vida contemplativa. Morreu na gruta, rodeado de fama de santidade, por volta do ano 875 (segundo algumas fontes, embora as datas sejam incertas). Foi sepultado no local. A gruta tornou-se santuário e local de peregrinação. Foi construída uma capela, depois uma igreja. A romaria de Santo Adrião, que se realiza anualmente no início de Março, é uma das mais importantes de Trás-os-Montes, atraindo milhares de devotos. Muitos sobem à serra de joelhos ou descalços em acto de penitência. São deixados ex-votos agradecendo curas e graças alcançadas. Santo Adrião é especialmente invocado contra doenças, pragas, tempestades e influências malignas.",
+    notavel: [
+      "Eremita em Trás-os-Montes no século VII",
+      "Fez brotar água da rocha milagrosamente",
+      "Romaria popular em Sever (Moncorvo)",
+      "Forte tradição de devoção em Trás-os-Montes",
+      "Invocado contra doenças e mal"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-romao-alentejo",
+    nome: "São Romão",
+    festa: "9 de agosto",
+    mes: "agosto",
+    nascimento: "Desconhecido",
+    falecimento: "Século VII",
+    origem: "Península Ibérica",
+    padroeiro: ["Alentejo"],
+    categorias: ["Milagres", "Proteção de terras", "Doenças"],
+    resumo: "Bispo e mártir venerado no interior alentejano. Forte tradição de romarias em sua honra, especialmente em localidades como Borba. Invocado para protecção de terras e curas.",
+    historia: "São Romão foi, segundo a tradição, um bispo cristão que viveu na Península Ibérica durante o século VII, período conturbado de invasões bárbaras e conflitos entre visigodos arianos e católicos. As informações históricas são escassas, mas a devoção popular mantém viva a sua memória. Terá sido bispo numa diocese do sul da Hispânia (provavelmente na região do actual Alentejo). Era conhecido pela santidade, zelo pastoral e caridade para com os pobres. Durante perseguições (ou conflitos entre facções cristãs arianas e católicas), foi martirizado pela fé. O local e circunstâncias exactas do martírio perderam-se no tempo. Foi sepultado na região onde exercera o ministério. A devoção popular cresceu e várias localidades alentejanas reivindicam ligação a São Romão. Em Borba, a Ermida de São Romão é importante centro de devoção. A romaria, no início de Agosto, atrai devotos de toda a região. Tradicionalmente, levam-se oferendas de pão e vinho benzidos. São Romão é invocado para protecção das terras agrícolas (especialmente contra pragas e secas), para saúde do gado, cura de doenças e protecção geral. Existe tradição de acender fogueiras na véspera da festa (São Romão Grande) e no dia 9 de Agosto (São Romão Pequeno). A devoção, embora antiga, mantém-se viva especialmente entre populações rurais do Alentejo que vêem em São Romão um protector das actividades agrícolas e da vida camponesa.",
+    notavel: [
+      "Bispo e mártir do século VII",
+      "Forte devoção no interior alentejano",
+      "Romarias populares, especialmente em Borba",
+      "Invocado para protecção de terras e colheitas",
+      "Tradição das fogueiras de São Romão"
+    ],
+    destaque: false
+  }
+
+// ============================================================
+// CONTINUA...
+// ============================================================
+// ============================================================
+// SANTOS RESTANTES - PARTE 2
+// ============================================================
+
+,
+
+  {
+    id: "santa-margarida-serra",
+    nome: "Santa Margarida da Serra",
+    festa: "20 de julho",
+    mes: "julho",
+    nascimento: "Desconhecido",
+    falecimento: "Século XIII",
+    origem: "Portugal (Grândola)",
+    padroeiro: ["Pastores", "Agricultores"],
+    categorias: ["Proteção de pastores", "Proteção de agricultores", "Fertilidade dos campos"],
+    resumo: "Pastora venerada em zonas rurais alentejanas, especialmente em Grândola. Associada à protecção de rebanhos e fertilidade dos campos.",
+    historia: "Margarida viveu no século XIII nas serras entre Grândola e Santiago do Cacém, no Baixo Alentejo. Era uma simples pastora que cuidava das ovelhas da família em terras áridas e solitárias. Desde jovem destacava-se pela piedade profunda. Levava sempre consigo um rosário rústico feito de sementes e rezava enquanto guardava o rebanho. Tinha especial devoção à Virgem Maria e a São Tiago, padroeiro de Santiago do Cacém. Segundo a tradição, Margarida fazia milagres simples mas significativos: protegia o rebanho de lobos através da oração, encontrava ovelhas perdidas guiada por visões, e as terras onde rezava tornavam-se mais férteis. Partilhava o pouco que tinha com mendigos e viajantes que cruzavam as veredas serranas. Num Inverno particularmente rigoroso, deu a sua própria capa a um peregrino que seguia para Santiago de Compostela. Nessa noite, Margarida morreu de frio enquanto guardava o rebanho. Quando a encontraram, o corpo estava coberto de flores silvestres, apesar de ser pleno Inverno. Pastores e camponeses começaram a venerar-lhe a memória. Foi sepultada numa pequena ermida na serra. A devoção espalhou-se entre as populações rurais. Santa Margarida da Serra tornou-se padroeira de pastores e agricultores da região. É invocada para protecção de rebanhos, boas colheitas e chuva na medida certa. A romaria, em Julho, junta pastores e agricultores que sobem à serra em agradecimento ou súplica.",
+    notavel: [
+      "Pastora do século XIII no Alentejo",
+      "Morreu de frio após dar capa a peregrino",
+      "Corpo encontrado coberto de flores em pleno Inverno",
+      "Padroeira de pastores e agricultores",
+      "Devoção forte em zonas rurais alentejanas"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santo-amaro-setubal",
+    nome: "Santo Amaro",
+    festa: "15 de janeiro",
+    mes: "janeiro",
+    nascimento: "~530",
+    falecimento: "~584",
+    origem: "França",
+    padroeiro: ["Doentes", "Aleijados"],
+    categorias: ["Proteção contra pestes", "Proteção contra doenças", "Curas"],
+    resumo: "Abade beneditino francês invocado contra epidemias. Venerado em muitas localidades de Portugal, especialmente em Setúbal e no Alentejo. Protector contra doenças contagiosas.",
+    historia: "Amaro (Mauro em latim) nasceu por volta de 530 em Roma, filho de família nobre. Aos 12 anos foi confiado pelos pais a São Bento, fundador da ordem beneditina, que o educou pessoalmente em Monte Cassino. Tornou-se um dos discípulos predilectos de São Bento. Conta-se que quando um jovem monge chamado Plácido estava a afogar-se num lago, São Bento ordenou a Mauro que o salvasse. Mauro correu sobre as águas sem afundar, puxou Plácido para terra e só então percebeu o milagre que realizara pela obediência. Após a morte de São Bento, Mauro foi enviado à Gália (França) onde fundou o Mosteiro de Glanfeuil, tornando-se o seu primeiro abade. Introduziu a Regra beneditina em França. Governou o mosteiro com sabedoria e santidade durante décadas. Realizou numerosas curas milagrosas, especialmente de doenças de pele e enfermidades contagiosas. Por isso tornou-se invocado contra pestes e epidemias. Morreu por volta de 584, cercado de fama de santidade. O culto espalhou-se por toda a Europa. Em Portugal, Santo Amaro é particularmente venerado desde a Idade Média. Durante surtos de peste, construíam-se capelas em sua honra e realizavam-se procissões pedindo sua intercessão. Em Setúbal, em Lisboa (bairro de Alcântara), no Alentejo e noutras regiões existem igrejas e capelas dedicadas a Santo Amaro. É invocado especialmente contra doenças contagiosas, problemas de pele, paralisias e para saúde geral.",
+    notavel: [
+      "Discípulo directo de São Bento",
+      "Caminhou sobre as águas para salvar confrade",
+      "Introduziu a Regra beneditina em França",
+      "Invocado contra pestes e epidemias",
+      "Venerado em Setúbal, Lisboa e Alentejo"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santa-catarina-alexandria-silves",
+    nome: "Santa Catarina de Alexandria",
+    festa: "25 de novembro",
+    mes: "novembro",
+    nascimento: "~287",
+    falecimento: "~305",
+    origem: "Alexandria (Egipto)",
+    padroeiro: ["Filósofos", "Estudantes", "Jovens mulheres"],
+    categorias: ["Sabedoria", "Proteção de jovens mulheres", "Educação"],
+    resumo: "Virgem e mártir do século IV, de grande sabedoria. Venerada em Silves e em todo o mundo. Padroeira dos filósofos e estudantes. Martirizada na roda de espinhos.",
+    historia: "Catarina nasceu por volta de 287 em Alexandria, Egipto, filha de família nobre. Era extraordinariamente inteligente e bela. Estudou filosofia, retórica, ciências e línguas, tornando-se uma das mulheres mais cultas do seu tempo. Aos 18 anos, teve uma visão mística na qual Jesus lhe colocou um anel, desposando-a espiritualmente. Consagrou-se a Cristo em virgindade perpétua. Durante a perseguição do imperador Maxêncio, Catarina foi ao palácio imperial e confrontou corajosamente o imperador, defendendo os cristãos e refutando os argumentos dos filósofos pagãos. Maxêncio, impressionado com a sua sabedoria mas enfurecido pela ousadia, convocou cinquenta dos mais sábios filósofos do império para a derrotarem em debate. Catarina converteu-os todos ao cristianismo durante a discussão. Furioso, Maxêncio mandou queimá-los vivos. Tentou então seduzir Catarina, oferecendo-lhe riquezas e até casamento se renunciasse à fé. Ela recusou firmemente. Foi torturada na 'roda de Catarina' — instrumento com lâminas afiadas que rasgava o corpo. Milagrosamente, a roda quebrou-se ao tocá-la. Finalmente foi decapitada por volta de 305. Segundo a lenda, em vez de sangue saiu leite do seu pescoço, e anjos levaram o corpo ao Monte Sinai onde foi sepultado. O Mosteiro de Santa Catarina no Sinai guarda as relíquias. O culto espalhou-se por todo o mundo cristão. Em Portugal, é especialmente venerada em Silves, onde existe uma igreja dedicada a ela. É invocada por estudantes, filósofos e jovens mulheres. É padroeira de bibliotecas e universidades.",
+    notavel: [
+      "Virgem e mártir de extraordinária sabedoria",
+      "Converteu 50 filósofos em debate teológico",
+      "Torturada na 'roda de Catarina'",
+      "Padroeira de estudantes e filósofos",
+      "Venerada em Silves e em todo o mundo"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "beato-joao-brito",
+    nome: "Beato João de Brito",
+    festa: "4 de fevereiro",
+    mes: "fevereiro",
+    nascimento: "1647",
+    falecimento: "1693",
+    origem: "Portugal (Lisboa)",
+    padroeiro: ["Missionários", "Índia"],
+    categorias: ["Coragem", "Ajuda em situações difíceis", "Evangelização"],
+    resumo: "Jesuíta português martirizado na Índia. Missionário corajoso que adaptou métodos de evangelização à cultura local. Exemplo de dedicação missionária até ao martírio.",
+    historia: "João de Brito nasceu a 1 de março de 1647 em Lisboa, filho de uma família nobre ligada à corte. Ainda criança adoeceu gravemente e a mãe prometeu que se curasse o consagraria a Deus. Curou-se milagrosamente. Aos 15 anos, contra a vontade da família que desejava vê-lo na corte, entrou para a Companhia de Jesus. Foi enviado como missionário para a Índia em 1673. Trabalhou primeiro em Goa, depois na missão de Maduré (actual Tamil Nadu), onde a evangelização enfrentava enormes dificuldades devido ao sistema de castas hindu. João de Brito adoptou métodos inovadores: vestiu-se como um sannyasi (asceta hindu da casta mais alta), viveu em pobreza extrema, adaptou a liturgia à cultura local. Aprendeu Tamil e Sânscrito. Conseguiu converter muitos hindus, incluindo membros de castas elevadas. Esta abordagem gerou controvérsia dentro da própria Igreja, mas João manteve-se firme, defendendo que era necessário adaptar a mensagem cristã à cultura local sem comprometer a essência da fé. Em 1686 regressou brevemente a Portugal para defender os métodos da missão de Maduré perante superiores. Voltou à Índia em 1690. Converteu um rajá local chamado Tadiathevan, que por isso teve de renunciar às esposas (excepto uma) conforme a lei cristã. As esposas repudiadas, furiosas, incitaram perseguição contra João de Brito. Foi preso em 1693. Recusou renunciar à fé. Foi brutalmente torturado e decapitado a 4 de fevereiro de 1693. Foi beatificado em 1853 e canonizado em 1947 por Pio XII. É padroeiro dos missionários e muito venerado na Índia e em Portugal.",
+    notavel: [
+      "Jesuíta português missionário na Índia",
+      "Adoptou métodos inovadores de inculturação",
+      "Martirizado por converter um rajá hindu",
+      "Canonizado em 1947",
+      "Padroeiro dos missionários"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-clemente-loule",
+    nome: "São Clemente",
+    festa: "23 de novembro",
+    mes: "novembro",
+    nascimento: "Desconhecido",
+    falecimento: "~101",
+    origem: "Roma",
+    padroeiro: ["Loulé", "Marinheiros"],
+    categorias: ["Proteção dos campos", "Proteção de agricultores", "Navegação"],
+    resumo: "Quarto Papa e mártir da Igreja primitiva. Padroeiro de Loulé, no Algarve. Venerado por agricultores e marinheiros. Afogado no Mar Negro amarrado a uma âncora.",
+    historia: "Clemente nasceu em Roma, provavelmente no século I. Segundo a tradição, foi ordenado bispo pelo próprio São Pedro e tornou-se o quarto Papa (depois de Pedro, Lino e Anacleto), governando a Igreja de Roma entre 88 e 101 d.C. Era conhecido pela sabedoria, caridade e zelo pastoral. Escreveu a Epístola aos Coríntios, um dos mais antigos documentos cristãos fora do Novo Testamento. Durante o reinado do imperador Trajano, foi exilado para as minas de pedra na Quersoneso (Crimeia, junto ao Mar Negro), onde já trabalhavam cerca de dois mil cristãos condenados. Clemente organizou-os em comunidade, celebrava missa e reconfortava-os. Realizou um milagre fazendo brotar água abundante de uma rocha, aliviando a sede dos prisioneiros. Muitos pagãos converteram-se ao vê-lo. Furioso, o governador ordenou que Clemente fosse atirado ao mar amarrado a uma âncora. Segundo a lenda, o mar recuou milagrosamente uma vez por ano revelando o túmulo submarino do santo. O culto espalhou-se por todo o mundo cristão. No século IX, São Cirilo e São Metódio (apóstolos dos eslavos) encontraram as relíquias de Clemente no Mar Negro e levaram-nas para Roma. Em Portugal, a devoção a São Clemente é especialmente forte em Loulé, onde é padroeiro. A tradição diz que marinheiros portugueses trouxeram relíquias ou a devoção do Mediterrâneo. A igreja matriz de Loulé é dedicada a São Clemente. É invocado por agricultores (pela água milagrosa da rocha) e marinheiros (pela protecção no mar, apesar de ter morrido afogado). A festa realiza-se a 23 de Novembro com procissão solene.",
+    notavel: [
+      "Quarto Papa da Igreja Católica",
+      "Autor da Epístola aos Coríntios",
+      "Martirizado amarrado a âncora no mar",
+      "Fez brotar água de rocha para prisioneiros",
+      "Padroeiro de Loulé no Algarve"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "nossa-senhora-saude-evora",
+    nome: "Nossa Senhora da Saúde (Évora)",
+    festa: "2 de fevereiro",
+    mes: "fevereiro",
+    nascimento: "—",
+    falecimento: "—",
+    origem: "Portugal (Évora)",
+    padroeiro: ["Évora", "Doentes"],
+    categorias: ["Cura de doenças", "Proteção das famílias", "Saúde"],
+    resumo: "Invocação mariana muito venerada em Évora e arredores. A igreja de Nossa Senhora da Saúde é local de romaria. Invocada para curas e protecção da saúde familiar.",
+    historia: "A devoção a Nossa Senhora da Saúde em Évora tem raízes no século XVI. Durante uma epidemia de peste que assolou a cidade, a população voltou-se para a Virgem Maria pedindo protecção e cura. Segundo a tradição, a epidemia cessou milagrosamente após procissões e orações fervorosas. Em acção de graças, foi construída uma ermida extra-muros dedicada a Nossa Senhora da Saúde. A localização fora das muralhas tinha razão prática: era onde ficavam isolados os pestosos. A ermida tornou-se santuário de esperança para doentes. Com o tempo, foi ampliada e transformada em igreja. A imagem de Nossa Senhora representa Maria com o Menino, ambos numa atitude de ternura maternal. Numerosos ex-votos deixados ao longo dos séculos testemunham curas alcançadas: muletas, fotografias, peças de vestuário, objectos pessoais. A festa de Nossa Senhora da Saúde, no início de Fevereiro, atrai devotos de toda a região. A procissão parte da igreja e percorre as ruas antigas de Évora. Muitos fiéis acompanham descalços ou de joelhos em acto de devoção. É tradição levar crianças doentes para serem benzidas. Nossa Senhora da Saúde é invocada não apenas para curas físicas mas também para saúde mental, equilíbrio emocional, protecção contra vícios e paz nas famílias. Durante a pandemia de Covid-19, muitas pessoas voltaram-se para Nossa Senhora da Saúde, deixando velas e orações na igreja, que permaneceu aberta para oração individual mesmo durante confinamento.",
+    notavel: [
+      "Devoção ligada a epidemia de peste em Évora",
+      "Igreja extra-muros da cidade",
+      "Numerosos ex-votos de curas",
+      "Procissão popular no início de Fevereiro",
+      "Invocada para saúde física e mental"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "santo-andre-sines",
+    nome: "Santo André",
+    festa: "30 de novembro",
+    mes: "novembro",
+    nascimento: "Século I",
+    falecimento: "~60 d.C.",
+    origem: "Galileia (Israel)",
+    padroeiro: ["Pescadores", "Escócia", "Rússia"],
+    categorias: ["Proteção de pescadores", "Proteção de navegantes", "Evangelização"],
+    resumo: "Apóstolo de Jesus, irmão de São Pedro. Foi o primeiro chamado por Cristo. Martirizado numa cruz em X. Venerado nas zonas costeiras de Portugal, especialmente em Sines.",
+    historia: "André era pescador no Mar da Galileia, irmão de Simão Pedro. Era discípulo de João Baptista quando este apontou Jesus dizendo: 'Eis o Cordeiro de Deus.' André seguiu Jesus imediatamente e foi, segundo o Evangelho de João, o primeiro apóstolo chamado. Foi André quem levou o irmão Pedro a Cristo, dizendo: 'Encontrámos o Messias.' Por isso é chamado Protokletos (o primeiro chamado). André estava presente em momentos importantes: na multiplicação dos pães (foi ele quem encontrou o rapaz com cinco pães e dois peixes), e entre os que questionaram Jesus sobre o fim dos tempos. Após Pentecostes, André pregou o Evangelho na Judeia, Samaria, Ásia Menor, ao longo do Mar Negro e na Grécia. Segundo a tradição, fundou a Igreja de Bizâncio (Constantinopla). Em Patras, Grécia, converteu muitas pessoas incluindo Maximila, esposa do procônsul romano Egeu. Furioso, Egeu ordenou que André fosse preso. Recusando renegar Cristo, foi condenado à crucifixão. Pediu que não fosse crucificado da mesma forma que Jesus, por não se considerar digno. Foi amarrado (não pregado) a uma cruz em forma de X, que ficou conhecida como Cruz de Santo André. Durante dois dias pregou aos que passavam, antes de morrer. As suas últimas palavras foram de gratidão pela cruz. O culto espalhou-se por todo o mundo cristão. É padroeiro da Escócia, Rússia, Grécia e de muitas localidades piscatórias. Em Portugal, é especialmente venerado em Sines e em zonas costeiras do Alentejo e Algarve. Pescadores invocam-no para protecção no mar. A festa realiza-se com bênção de barcos.",
+    notavel: [
+      "Primeiro apóstolo chamado por Jesus",
+      "Levou o irmão Pedro a Cristo",
+      "Martirizado em cruz em X (Cruz de Santo André)",
+      "Padroeiro dos pescadores",
+      "Venerado em Sines e zonas costeiras"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-lourenco-almancil",
+    nome: "São Lourenço",
+    festa: "10 de agosto",
+    mes: "agosto",
+    nascimento: "~225",
+    falecimento: "258",
+    origem: "Espanha (Huesca)",
+    padroeiro: ["Cozinheiros", "Pobres", "Bibliotecários"],
+    categorias: ["Proteção contra incêndios", "Bênção das colheitas", "Caridade"],
+    resumo: "Diácono e mártir do século III. Tesoureiro da Igreja que distribuiu os bens aos pobres. Martirizado numa grelha ardente. A Igreja de São Lourenço em Almancil é jóia do barroco português.",
+    historia: "Lourenço nasceu por volta de 225 em Huesca, Espanha. Estudou em Saragoça onde conheceu o futuro Papa Sisto II. Quando Sisto foi eleito Papa em 257, levou Lourenço para Roma e ordenou-o diácono. Confiou-lhe a administração dos bens da Igreja e o cuidado dos pobres. Lourenço organizava a distribuição de esmolas, visitava viúvas e órfãos, levava a Eucaristia aos prisioneiros cristãos. Era profundamente amado pelos pobres de Roma. Em 258, o imperador Valeriano desencadeou violenta perseguição. O Papa Sisto II foi preso e decapitado. Lourenço, ao ver o Papa ser levado ao martírio, chorou: 'Pai, para onde vais sem o teu diácono?' Sisto respondeu: 'Não te abandono, filho. Em três dias me seguirás.' O prefeito de Roma, sabendo que Lourenço guardava os tesouros da Igreja, ordenou que os entregasse. Lourenço pediu três dias. Nesse tempo, distribuiu todos os bens aos pobres e vendeu os vasos sagrados. No terceiro dia, apresentou-se ao prefeito acompanhado de multidão de pobres, cegos, coxos, leprosos, e disse: 'Aqui estão os tesouros da Igreja.' Furioso, o prefeito ordenou que fosse assado vivo numa grelha de ferro sobre brasas. Durante o suplício, Lourenço manteve-se sereno. Segundo a tradição, disse ao carrasco: 'Este lado já está assado, vira-me para o outro.' Morreu rezando pelos perseguidores. Foi sepultado na Via Tiburtina onde foi construída a Basílica de São Lourenço Fora de Muros. O culto espalhou-se rapidamente. É invocado contra incêndios (pela grelha ardente) e para boas colheitas. Em Almancil, Algarve, a Igreja de São Lourenço (século XVIII) é obra-prima do barroco, com azulejos magníficos cobrindo paredes e tecto.",
+    notavel: [
+      "Diácono mártir do século III",
+      "Distribuiu tesouros da Igreja aos pobres",
+      "Martirizado em grelha ardente",
+      "Padroeiro contra incêndios",
+      "Igreja de Almancil é jóia do barroco"
+    ],
+    destaque: false
+  },
+
+  {
+    id: "sao-damaso-i",
+    nome: "São Dâmaso I",
+    festa: "11 de dezembro",
+    mes: "dezembro",
+    nascimento: "~305",
+    falecimento: "384",
+    origem: "Península Ibérica (provavelmente Portugal)",
+    padroeiro: ["Arqueólogos", "Portugal"],
+    categorias: ["Proteção da Igreja", "Unidade", "Defesa da fé"],
+    resumo: "Papa de origem portuguesa (ou hispânica) que defendeu a Igreja contra heresias. Promoveu o culto dos mártires e organizou as catacumbas. Encomendou a São Jerónimo a tradução da Bíblia (Vulgata).",
+    historia: "Dâmaso nasceu por volta de 305, provavelmente na Península Ibérica. Há tradições que o dizem português, outras que o situam em Espanha. O pai era diácono em Roma (nessa época o celibato não era obrigatório) e levou a família para a Cidade Eterna ainda Dâmaso era criança. Cresceu no ambiente eclesial romano. Foi ordenado diácono e depois sacerdote. Em 366, após a morte do Papa Libério, foi eleito Papa com 60 anos, num contexto de cisma (havia um antipapa, Ursino). Dâmaso governou a Igreja durante 18 anos de grande turbulência. Enfrentou heresias arianas que negavam a divindade de Cristo. Convocou concílios, defendeu a ortodoxia, promoveu a unidade. Uma das suas maiores contribuições foi encomendar a São Jerónimo a tradução da Bíblia para latim (a Vulgata), que se tornou a versão oficial da Igreja durante séculos. Dâmaso tinha profunda devoção aos mártires. Mandou restaurar as catacumbas de Roma, localizou túmulos de mártires esquecidos, compôs inscrições poéticas em sua honra (muitas ainda hoje visíveis). Chamavam-lhe o 'arqueólogo dos mártires'. Estabeleceu o latim como língua litúrgica oficial, substituindo o grego. Promoveu o primado de Roma sobre as outras sedes episcopais. Enfrentou acusações falsas com dignidade. Morreu a 11 de dezembro de 384, deixando a Igreja mais forte e unida. Foi sepultado junto da mãe e irmã (não nas catacumbas com os mártires, por humildade). Em Portugal é venerado como papa de possível origem portuguesa, invocado para protecção da Igreja e unidade dos cristãos.",
+    notavel: [
+      "Papa de origem ibérica (portuguesa ou espanhola)",
+      "Encomendou a Vulgata a São Jerónimo",
+      "Restaurou catacumbas e promoveu culto dos mártires",
+      "Defendeu a Igreja contra heresias",
+      "Estabeleceu latim como língua litúrgica"
+    ],
+    destaque: false
+  }
 
 ];
 // Exportar para uso global
