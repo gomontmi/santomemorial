@@ -950,7 +950,6 @@ const saintsData = [
   }
 
 ];
-
 // Exportar para uso global
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = saintsData;
