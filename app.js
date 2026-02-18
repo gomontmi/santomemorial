@@ -1,42 +1,44 @@
 // ============================================================
-// SANTO MEMORIAL — Application Logic
+// SANTO MEMORIAL — Lógica da Aplicação
 // ============================================================
 
-// --- MOBILE MENU ---
+// --- MENU MÓVEL ---
 function toggleMenu() {
   const nav = document.getElementById('mobileNav');
   nav.classList.toggle('open');
 }
 
-// --- BUILD A SAINT CARD ---
+// --- CONSTRUIR CARTÃO DE SANTO ---
 function buildCard(saint) {
-  const patrons = saint.patronOf.slice(0, 2).join(', ');
+  const padroeiros = saint.padroeiro.slice(0, 2).join(', ');
+  const categorias = saint.categorias.slice(0, 2).join(', ');
+  
   return `
     <article class="saint-card" onclick="window.location='saint.html?id=${saint.id}'">
       <div class="card-top">
         <span class="card-cross">✦</span>
       </div>
       <div class="card-body">
-        <p class="card-feast">${saint.feast}</p>
-        <h3 class="card-name">${saint.name}</h3>
-        <p class="card-origin">✦ ${saint.origin}</p>
-        <p class="card-summary">${saint.summary}</p>
-        <p class="card-patron"><em>Patron of:</em> ${patrons}</p>
-        <a href="saint.html?id=${saint.id}" class="card-link">Read More →</a>
+        <p class="card-feast">${saint.festa}</p>
+        <h3 class="card-name">${saint.nome}</h3>
+        <p class="card-origin">✦ ${saint.origem}</p>
+        <p class="card-summary">${saint.resumo}</p>
+        <p class="card-patron"><em>Ajuda em:</em> ${categorias}</p>
+        <a href="saint.html?id=${saint.id}" class="card-link">Ler Mais →</a>
       </div>
     </article>
   `;
 }
 
-// --- HOMEPAGE: FEATURED SAINTS ---
+// --- HOMEPAGE: SANTOS EM DESTAQUE ---
 function initFeatured() {
   const grid = document.getElementById('featuredGrid');
   if (!grid) return;
-  const featured = saintsData.filter(s => s.featured);
+  const featured = saintsData.filter(s => s.destaque);
   grid.innerHTML = featured.map(buildCard).join('');
 }
 
-// --- HOMEPAGE: SEARCH ---
+// --- HOMEPAGE: PESQUISA ---
 function searchSaints() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
   const resultsDiv = document.getElementById('searchResults');
@@ -48,20 +50,21 @@ function searchSaints() {
   }
 
   const matches = saintsData.filter(s =>
-    s.name.toLowerCase().includes(query) ||
-    s.patronOf.some(p => p.toLowerCase().includes(query)) ||
-    s.feast.toLowerCase().includes(query) ||
-    s.origin.toLowerCase().includes(query) ||
-    s.summary.toLowerCase().includes(query)
+    s.nome.toLowerCase().includes(query) ||
+    s.padroeiro.some(p => p.toLowerCase().includes(query)) ||
+    s.categorias.some(c => c.toLowerCase().includes(query)) ||
+    s.festa.toLowerCase().includes(query) ||
+    s.origem.toLowerCase().includes(query) ||
+    s.resumo.toLowerCase().includes(query)
   );
 
   if (matches.length === 0) {
-    resultsDiv.innerHTML = '<p class="no-results">No saints found. Try a different search.</p>';
+    resultsDiv.innerHTML = '<p class="no-results">Nenhum santo encontrado. Tente uma pesquisa diferente.</p>';
   } else {
     resultsDiv.innerHTML = matches.map(s => `
       <a href="saint.html?id=${s.id}" class="search-result-item">
-        <strong>${s.name}</strong>
-        <span>${s.feast} · ${s.origin}</span>
+        <strong>${s.nome}</strong>
+        <span>${s.festa} · ${s.categorias[0]}</span>
       </a>
     `).join('');
   }
@@ -69,29 +72,34 @@ function searchSaints() {
   resultsDiv.classList.remove('hidden');
 }
 
-// --- HOMEPAGE: FILTER BY MONTH ---
-function filterByMonth(month) {
-  const grid = document.getElementById('monthGrid');
+// --- HOMEPAGE: FILTRAR POR CATEGORIA ---
+function filterByCategory(category) {
+  const grid = document.getElementById('categoryGrid');
   if (!grid) return;
-  const matches = saintsData.filter(s => s.month === month);
+  
+  const matches = saintsData.filter(s => 
+    s.categorias.some(c => c.toLowerCase().includes(category.toLowerCase()))
+  );
+  
   if (matches.length === 0) {
-    grid.innerHTML = `<p class="no-results" style="text-align:center; color: var(--gold); font-style:italic;">No saints listed for ${month} yet.</p>`;
+    grid.innerHTML = `<p class="no-results" style="text-align:center; color: var(--gold); font-style:italic;">Nenhum santo listado para ${category} ainda.</p>`;
   } else {
     grid.innerHTML = matches.map(buildCard).join('');
   }
+  
   grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// --- SAINTS PAGE: INIT ---
+// --- PÁGINA DE SANTOS: INIT ---
 function initSaintsPage() {
-  // Populate patronages dropdown
-  const allPatrons = [...new Set(saintsData.flatMap(s => s.patronOf))].sort();
-  const select = document.getElementById('patronFilter');
+  // Preencher dropdown de categorias
+  const allCategories = [...new Set(saintsData.flatMap(s => s.categorias))].sort();
+  const select = document.getElementById('categoryFilter');
   if (select) {
-    allPatrons.forEach(p => {
+    allCategories.forEach(c => {
       const opt = document.createElement('option');
-      opt.value = p;
-      opt.textContent = p;
+      opt.value = c;
+      opt.textContent = c;
       select.appendChild(opt);
     });
   }
@@ -113,32 +121,33 @@ function renderAllSaints(data) {
   } else {
     empty.classList.add('hidden');
     grid.innerHTML = data.map(buildCard).join('');
-    if (count) count.textContent = `Showing ${data.length} saint${data.length !== 1 ? 's' : ''}`;
+    if (count) count.textContent = `A mostrar ${data.length} santo${data.length !== 1 ? 's' : ''}`;
   }
 }
 
 function filterSaintsPage() {
   const query = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
   const month = document.getElementById('monthFilter')?.value || '';
-  const patron = document.getElementById('patronFilter')?.value || '';
+  const category = document.getElementById('categoryFilter')?.value || '';
 
   let results = saintsData;
 
   if (query) {
     results = results.filter(s =>
-      s.name.toLowerCase().includes(query) ||
-      s.summary.toLowerCase().includes(query) ||
-      s.origin.toLowerCase().includes(query) ||
-      s.feast.toLowerCase().includes(query)
+      s.nome.toLowerCase().includes(query) ||
+      s.resumo.toLowerCase().includes(query) ||
+      s.origem.toLowerCase().includes(query) ||
+      s.festa.toLowerCase().includes(query) ||
+      s.categorias.some(c => c.toLowerCase().includes(query))
     );
   }
 
   if (month) {
-    results = results.filter(s => s.month === month);
+    results = results.filter(s => s.mes.toLowerCase() === month.toLowerCase());
   }
 
-  if (patron) {
-    results = results.filter(s => s.patronOf.includes(patron));
+  if (category) {
+    results = results.filter(s => s.categorias.includes(category));
   }
 
   renderAllSaints(results);
@@ -147,11 +156,11 @@ function filterSaintsPage() {
 function resetFilters() {
   if (document.getElementById('searchInput')) document.getElementById('searchInput').value = '';
   if (document.getElementById('monthFilter')) document.getElementById('monthFilter').value = '';
-  if (document.getElementById('patronFilter')) document.getElementById('patronFilter').value = '';
+  if (document.getElementById('categoryFilter')) document.getElementById('categoryFilter').value = '';
   renderAllSaints(saintsData);
 }
 
-// --- SAINT PROFILE PAGE ---
+// --- PÁGINA DE PERFIL DO SANTO ---
 function loadSaintProfile() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
@@ -159,47 +168,57 @@ function loadSaintProfile() {
   const container = document.getElementById('saintProfile');
 
   if (!saint || !container) {
-    if (container) container.innerHTML = '<div class="container" style="text-align:center; padding: 4rem;"><p>Saint not found. <a href="saints.html">Return to all saints →</a></p></div>';
+    if (container) container.innerHTML = '<div class="container" style="text-align:center; padding: 4rem;"><p>Santo não encontrado. <a href="saints.html">Regressar a todos os santos →</a></p></div>';
     return;
   }
 
-  // Update page title and breadcrumb
-  document.getElementById('pageTitle').textContent = `${saint.name} – Santo Memorial`;
+  // Atualizar título da página e breadcrumb
+  document.getElementById('pageTitle').textContent = `${saint.nome} – Santo Memorial`;
   const bc = document.getElementById('breadcrumbName');
-  if (bc) bc.textContent = saint.name;
+  if (bc) bc.textContent = saint.nome;
 
-  const notableItems = saint.notable.map(n => `<li>${n}</li>`).join('');
-  const patronItems = saint.patronOf.map(p => `<span class="patron-tag">${p}</span>`).join('');
+  const notableItems = saint.notavel.map(n => `<li>${n}</li>`).join('');
+  const patronItems = saint.padroeiro.map(p => `<span class="patron-tag">${p}</span>`).join('');
+  const categoriaItems = saint.categorias.map(c => `<span class="category-tag">${c}</span>`).join('');
 
   container.innerHTML = `
     <div class="container">
       <div class="profile-header">
         <div class="profile-cross">✦</div>
-        <p class="profile-feast">Feast Day: ${saint.feast}</p>
-        <h1 class="profile-name">${saint.name}</h1>
-        <p class="profile-origin">${saint.origin} · ${saint.born} – ${saint.died}</p>
-        <div class="profile-patrons">${patronItems}</div>
+        <p class="profile-feast">Dia de Festa: ${saint.festa}</p>
+        <h1 class="profile-name">${saint.nome}</h1>
+        <p class="profile-origin">${saint.origem} · ${saint.nascimento} – ${saint.falecimento}</p>
+        <div class="profile-meta">
+          <div class="profile-patrons">
+            <strong>Padroeiro de:</strong>
+            ${patronItems}
+          </div>
+          <div class="profile-categories">
+            <strong>Ajuda em:</strong>
+            ${categoriaItems}
+          </div>
+        </div>
       </div>
 
       <div class="profile-body">
         <div class="profile-summary">
-          <p>${saint.summary}</p>
+          <p>${saint.resumo}</p>
         </div>
 
         <div class="profile-story">
-          <h2>Life & Story</h2>
-          <p>${saint.story}</p>
+          <h2>Vida e História</h2>
+          <p>${saint.historia}</p>
         </div>
 
         <div class="profile-notable">
-          <h2>Why Notable</h2>
+          <h2>Porquê Notável</h2>
           <ul>${notableItems}</ul>
         </div>
       </div>
     </div>
   `;
 
-  // Load related saints
+  // Carregar santos relacionados
   const related = saintsData.filter(s => s.id !== id).slice(0, 3);
   const relatedGrid = document.getElementById('relatedGrid');
   if (relatedGrid) {
@@ -207,10 +226,10 @@ function loadSaintProfile() {
   }
 }
 
-// --- INIT ON PAGE LOAD ---
+// --- INIT NO CARREGAMENTO DA PÁGINA ---
 document.addEventListener('DOMContentLoaded', () => {
   initFeatured();
-  // Saints page filter bindings
+  // Bindings de filtros da página de santos
   const searchInput = document.getElementById('searchInput');
   if (searchInput && document.getElementById('allSaintsGrid')) {
     searchInput.addEventListener('input', filterSaintsPage);

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>All Saints – Santo Memorial</title>
-  <meta name="description" content="Browse the complete collection of saints in the Santo Memorial depository."/>
+  <title>Todos os Santos – Santo Memorial</title>
+  <meta name="description" content="Navegue pela coleção completa de santos no repositório Santo Memorial."/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"/>
@@ -17,59 +17,59 @@
         <span class="logo-cross">✦</span>
         <div>
           <h1 class="site-title">Santo Memorial</h1>
-          <p class="site-tagline">A Depository of Saints</p>
+          <p class="site-tagline">Repositório de Santos</p>
         </div>
       </div>
       <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="saints.html" class="active">All Saints</a>
-        <a href="about.html">About</a>
-        <a href="donate.html">Support Us</a>
+        <a href="index.html">Início</a>
+        <a href="saints.html" class="active">Todos os Santos</a>
+        <a href="about.html">Sobre</a>
+        <a href="donate.html">Apoiar</a>
       </nav>
       <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
     </div>
     <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="saints.html">All Saints</a>
-      <a href="about.html">About</a>
-      <a href="donate.html">Support Us</a>
+      <a href="index.html">Início</a>
+      <a href="saints.html">Todos os Santos</a>
+      <a href="about.html">Sobre</a>
+      <a href="donate.html">Apoiar</a>
     </div>
   </header>
 
   <section class="page-hero">
-    <h2 class="page-hero-title">All Saints</h2>
-    <p class="page-hero-sub">Browse, search, and filter our growing collection</p>
+    <h2 class="page-hero-title">Todos os Santos</h2>
+    <p class="page-hero-sub">Navegue, pesquise e filtre a nossa coleção em crescimento</p>
   </section>
 
   <section class="saints-page-section">
     <div class="container">
 
-      <!-- FILTERS -->
+      <!-- FILTROS -->
       <div class="filters-bar">
         <div class="search-wrap inline">
-          <input type="text" id="searchInput" placeholder="Search saints…" oninput="searchSaints()" />
+          <input type="text" id="searchInput" placeholder="Pesquisar santos..." oninput="searchSaints()" />
           <span class="search-icon">⊕</span>
         </div>
         <select id="monthFilter" onchange="filterSaintsPage()">
-          <option value="">All Months</option>
-          <option>January</option><option>February</option><option>March</option>
-          <option>April</option><option>May</option><option>June</option>
-          <option>July</option><option>August</option><option>September</option>
-          <option>October</option><option>November</option><option>December</option>
+          <option value="">Todos os Meses</option>
+          <option>janeiro</option><option>fevereiro</option><option>março</option>
+          <option>abril</option><option>maio</option><option>junho</option>
+          <option>julho</option><option>agosto</option><option>setembro</option>
+          <option>outubro</option><option>novembro</option><option>dezembro</option>
         </select>
-        <select id="patronFilter" onchange="filterSaintsPage()">
-          <option value="">All Patronages</option>
+        <select id="categoryFilter" onchange="filterSaintsPage()">
+          <option value="">Todas as Categorias</option>
         </select>
-        <button onclick="resetFilters()" class="btn-reset">Clear Filters</button>
+        <button onclick="resetFilters()" class="btn-reset">Limpar Filtros</button>
       </div>
 
       <p class="results-count" id="resultsCount"></p>
 
-      <!-- SAINTS GRID -->
+      <!-- GRELHA DE SANTOS -->
       <div class="saints-grid" id="allSaintsGrid"></div>
 
       <div class="empty-state hidden" id="emptyState">
-        <p>✦ No saints found matching your search. Try different keywords.</p>
+        <p>✦ Nenhum santo encontrado com a sua pesquisa. Tente palavras diferentes.</p>
       </div>
 
     </div>
@@ -78,14 +78,14 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-logo">✦ Santo Memorial</div>
-      <p class="footer-text">A labor of faith and devotion. All content is offered freely in honor of the saints.</p>
+      <p class="footer-text">Um labor de fé e devoção. Todo o conteúdo é oferecido livremente em honra dos santos.</p>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="saints.html">Saints</a>
-        <a href="about.html">About</a>
-        <a href="donate.html">Donate</a>
+        <a href="index.html">Início</a>
+        <a href="saints.html">Santos</a>
+        <a href="about.html">Sobre</a>
+        <a href="donate.html">Doar</a>
       </div>
-      <p class="footer-copy">© <span id="year"></span> Santo Memorial. Made with devotion.</p>
+      <p class="footer-copy">© <span id="year"></span> Santo Memorial. Feito com devoção.</p>
     </div>
   </footer>
 
